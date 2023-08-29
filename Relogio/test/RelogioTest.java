@@ -1,6 +1,7 @@
 package Relogio.test;
 import static org.junit.Assert.assertEquals;
 import org.junit.*;
+import Relogio.src.Relogio;
 
 public class RelogioTest {
     @Test
