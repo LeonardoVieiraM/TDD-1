@@ -38,7 +38,7 @@ public class Relogio {
         }
         else if (x == 2){
             while(y>=13){
-             y =- 12;
+             y = y - 12;
             }
             hora = y;
         }
