@@ -44,4 +44,8 @@ public class Relogio {
         }
         return hora;
     }
+
+    public long atualizar (){
+        return System.currentTimeMillis();
+    }
 }
