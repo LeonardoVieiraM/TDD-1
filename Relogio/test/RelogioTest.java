@@ -30,4 +30,9 @@ public class RelogioTest {
         assertEquals(16, relogio.imprimir(1, 16));
         assertEquals(4, relogio.imprimir(2, 16));
     }
+    @Test
+    public void testAtualizar(){
+        Relogio relogio = new Relogio();
+        assertEquals(System.currentTimeMillis(), relogio.atualizar());
+    }
 }
