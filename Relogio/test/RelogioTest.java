@@ -10,4 +10,9 @@ public class RelogioTest {
         int result = relogio.hora(12);
         assertEquals(12, result);
     }
+    public void testReinicio() {
+        Relogio relogio = new Relogio();
+        int result = relogio.reinicio();
+        assertEquals(0, result);
+    }
 }
