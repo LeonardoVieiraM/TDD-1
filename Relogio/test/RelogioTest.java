@@ -21,7 +21,7 @@ public class RelogioTest {
     @Test
     public void testCronometro(){
         Relogio relogio = new Relogio();
-        int result = relogio.cronometro(1,5);
+        long result = relogio.cronometro(1,5);
         assertEquals(4, result);
     }
 }

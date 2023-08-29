@@ -19,15 +19,15 @@ public class Relogio {
         segundo = 0;
     }
 
-    public long cronometro (int x, int y){
+    public long cronometro (long x, long y){
         long tempo = System.currentTimeMillis();
-        long tempoInicio = System.currentTimeMillis() + x; 
-        long tempoFim = System.currentTimeMillis() + y; 
+        long tempoInicio = tempo + x; 
+        long tempoFim = tempo + y;
         do{
             tempo = System.currentTimeMillis();
             if (tempo >= tempoInicio)
                 System.out.println(tempo-tempoInicio);
         } while (tempo<=tempoFim);
-        return tempo;
+        return tempoFim-tempoInicio;
     }
 }
