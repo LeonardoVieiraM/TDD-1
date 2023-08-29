@@ -10,11 +10,18 @@ public class RelogioTest {
         int result = relogio.setHora(12);
         assertEquals(12, result);
     }
+    @Test
     public void testReinicio() {
         Relogio relogio = new Relogio();
         relogio.reinicio();
         assertEquals(0, relogio.hora);
         assertEquals(0, relogio.minuto);
         assertEquals(0, relogio.segundo);
+    }
+    @Test
+    public void testCronometro(){
+        Relogio relogio = new Relogio();
+        int result = relogio.cronometro(1,5);
+        assertEquals(4, result);
     }
 }
