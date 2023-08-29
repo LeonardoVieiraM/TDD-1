@@ -5,7 +5,7 @@ import Relogio.src.Relogio;
 
 public class RelogioTest {
     @Test
-    public void testSum() {
+    public void testHora() {
         Relogio relogio = new Relogio();
         int result = relogio.hora(12);
         assertEquals(12, result);
