@@ -24,4 +24,10 @@ public class RelogioTest {
         long result = relogio.cronometro(1,5);
         assertEquals(4, result);
     }
+    @Test
+    public void testImprimir(){
+        Relogio relogio = new Relogio();
+        assertEquals(20, relogio.imprimir(1));
+        assertEquals(8, relogio.imprimir(2));
+    }
 }
