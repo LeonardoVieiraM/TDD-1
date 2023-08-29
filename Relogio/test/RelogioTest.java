@@ -7,12 +7,14 @@ public class RelogioTest {
     @Test
     public void testHora() {
         Relogio relogio = new Relogio();
-        int result = relogio.hora(12);
+        int result = relogio.setHora(12);
         assertEquals(12, result);
     }
     public void testReinicio() {
         Relogio relogio = new Relogio();
-        int result = relogio.reinicio();
-        assertEquals(0, result);
+        relogio.reinicio();
+        assertEquals(0, relogio.hora);
+        assertEquals(0, relogio.minuto);
+        assertEquals(0, relogio.segundo);
     }
 }
