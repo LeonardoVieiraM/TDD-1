@@ -27,7 +27,7 @@ public class RelogioTest {
     @Test
     public void testImprimir(){
         Relogio relogio = new Relogio();
-        assertEquals(20, relogio.imprimir(1));
-        assertEquals(8, relogio.imprimir(2));
+        assertEquals(16, relogio.imprimir(1, 16));
+        assertEquals(4, relogio.imprimir(2, 16));
     }
 }

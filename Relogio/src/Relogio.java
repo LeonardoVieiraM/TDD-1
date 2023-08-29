@@ -30,4 +30,18 @@ public class Relogio {
         } while (tempo<=tempoFim);
         return tempoFim-tempoInicio;
     }
+
+    public int imprimir (int x, int y){
+        int hora=0;
+        if (x == 1){
+            hora = y;
+        }
+        else if (x == 2){
+            while(y>=13){
+             y =- 12;
+            }
+            hora = y;
+        }
+        return hora;
+    }
 }
